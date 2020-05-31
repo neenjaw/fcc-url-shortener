@@ -40,7 +40,7 @@ app.get('/', (req, res) => {
   res.sendFile(process.cwd() + '/views/index.html');
 });
 
-// your first API endpoint...
+// endpoints
 app.get("/api/shortUrl/:shortUrl", urlHandler.getShortUrl)
 app.post("/api/shorturl/new", urlHandler.createShortUrl);
 
