@@ -25,6 +25,7 @@ mongoose.connect(mongoUri, {
   useFindAndModify: false
 })
 
+// Since this is a test project, remove any collection
 Counter.deleteMany({}, () => {})
 Url.deleteMany({}, () => {})
 
